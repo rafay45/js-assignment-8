@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else & else if statement</title>
+</head>
+
+<body>
+    <script>
+        let userInput = prompt('Enter a single character (number or letter)')
+
+        let charCode = userInput.charCodeAt(0)
+
+        if (userInput.length === 1) {
+            if (charCode >= 48 && charCode <= 57) {
+                alert('This is a number')
+            } else if (charCode >= 65 && charCode <= 90) {
+                alert('This is a Uppercase')
+            } else if (charCode >= 97 && charCode <= 122) {
+                alert('This is a lowercase')
+            }
+            else {
+                alert('The input is not a number or letter.')
+            }
+        } else {
+            alert('Please enter only a single character')
+        }
+        let num1 = prompt('Enter the first integer')
+
+        let num2 = prompt('Enter the second integer')
+
+        if (num1 > num2) {
+            alert("The larger number is: " + num1)
+        }
+        else if (num2 > num1) {
+            alert("The larger number is: " + num2)
+        }
+        else {
+            alert('both number are equal')
+        }
+
+        let number = prompt('Check your value')
+
+        if (number >= 1) {
+            alert("The number is positive")
+        } else if (number <= 1) {
+            alert("The number is negative")
+        } else{
+            alert("The number is zero")
+        }
+
+       
+        
+        //  let userCharacter = prompt("Enter a Vowel character")
+
+        //  if(userCharacter.length >= 1){
+        //     alert('its a vowel character')
+        //  }else if(userCharacter.length === 1 &&  userCharacter.length <= 1){
+        //     alert('Not a vowel character')
+        //  }else{
+        //     alert('nothing')
+        //  }
+    </script>
+</body>
+</html>
